@@ -22,6 +22,7 @@ torch.onnx.export(
     dynamic_axes={'input': {0: 'batch_size'}, 'output': {0: 'batch_size'}},
 )
 
+
 input_fp32 = "fine_tuned_model_fp32.onnx"
 input_preprocessed = "fine_tuned_model_preprocessed.onnx"
 output_int8 = "fine_tuned_model_int8.onnx"
